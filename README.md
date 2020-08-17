@@ -7,7 +7,7 @@ The whole purpose of this little toy was to create a self-updating, better visua
 
 ## Functionality
 
-This is only the frontend of the app. There is an /api directory with a data.json (real data for 17/03/20202 - 17/08/2020) which you can use in Home.js (no idea if it works with current API call; if it doesn't, just add ".json" to the existing "/api/data" URL).
+This is only the frontend of the app. There is an /api directory with a data.json (real data for 17/03/2020 - 17/08/2020) which you can use in Home.js (no idea if it works with current API call; if it doesn't, just add ".json" to the existing "/api/data" URL).
 
 The reason I'm not embedding a backend is that I'm currently lurking on other people APIs. Which means I'm not eager to seeing those closed because of the data usage going crazy. Feel free to find your own data sources.
 
