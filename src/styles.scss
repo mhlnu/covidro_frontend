@@ -1,0 +1,245 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.App {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#root {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	background-color: #fafafa;
+	.main {
+		flex-grow: 1;
+	}
+	.footer {
+		flex-shrink: 0;
+	}
+}
+
+.title {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	width: 2rem;
+	height: 2rem;
+	margin-right: 1rem;
+	display: inline-block;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Ctitle%3EAsset%202%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Ccircle%20cx%3D%22256%22%20cy%3D%22256%22%20r%3D%22164.38%22%20style%3D%22fill%3A%23ef7f8d%22%2F%3E%3Cpath%20d%3D%22M266%2C362.71a23.53%2C23.53%2C0%2C1%2C0%2C23.53%2C23.53A23.56%2C23.56%2C0%2C0%2C0%2C266%2C362.71Zm0%2C32.06a8.53%2C8.53%2C0%2C1%2C1%2C8.53-8.53A8.53%2C8.53%2C0%2C0%2C1%2C266%2C394.77Z%22%2F%3E%3Cpath%20d%3D%22M387%2C263.27a36.38%2C36.38%2C0%2C1%2C0-36.38%2C36.37A36.42%2C36.42%2C0%2C0%2C0%2C387%2C263.27Zm-49.57%2C0a13.19%2C13.19%2C0%2C1%2C1%2C13.19%2C13.19A13.2%2C13.2%2C0%2C0%2C1%2C337.43%2C263.27Z%22%2F%3E%3Cpath%20d%3D%22M119.25%2C256a23.53%2C23.53%2C0%2C1%2C0%2C23.53-23.53A23.56%2C23.56%2C0%2C0%2C0%2C119.25%2C256Zm32.06%2C0a8.53%2C8.53%2C0%2C1%2C1-8.53-8.53A8.54%2C8.54%2C0%2C0%2C1%2C151.31%2C256Z%22%2F%3E%3Cpath%20d%3D%22M140%2C154a41%2C41%2C0%2C1%2C0%2C29-12A40.76%2C40.76%2C0%2C0%2C0%2C140%2C154Zm43.88%2C29a14.89%2C14.89%2C0%2C1%2C1-4.36-10.52A14.77%2C14.77%2C0%2C0%2C1%2C183.85%2C183Z%22%2F%3E%3Cpath%20d%3D%22M331%2C364.56a23.54%2C23.54%2C0%2C1%2C0-16.64-6.9A23.35%2C23.35%2C0%2C0%2C0%2C331%2C364.56ZM325%2C335a8.52%2C8.52%2C0%2C1%2C1-2.5%2C6%2C8.47%2C8.47%2C0%2C0%2C1%2C2.5-6Z%22%2F%3E%3Cpath%20d%3D%22M352.39%2C179.36a14%2C14%2C0%2C0%2C1-19.75-19.75%2C12.28%2C12.28%2C0%2C0%2C0-17.36-17.37%2C38.52%2C38.52%2C0%2C0%2C0%2C54.48%2C54.48%2C12.28%2C12.28%2C0%2C0%2C0-17.37-17.36Z%22%2F%3E%3Cpath%20d%3D%22M177.47%2C369.32a43.44%2C43.44%2C0%2C0%2C0%2C33.42%2C1.94%2C13.94%2C13.94%2C0%2C1%2C0-9.15-26.33A15.85%2C15.85%2C0%2C0%2C1%2C191.33%2C315a13.94%2C13.94%2C0%2C0%2C0-9.15-26.34%2C43.75%2C43.75%2C0%2C0%2C0-4.71%2C80.68Z%22%2F%3E%3Cpath%20d%3D%22M256%2C109.26a23.53%2C23.53%2C0%2C1%2C0%2C23.53%2C23.53A23.56%2C23.56%2C0%2C0%2C0%2C256%2C109.26Zm0%2C32.07a8.54%2C8.54%2C0%2C1%2C1%2C8.53-8.54A8.54%2C8.54%2C0%2C0%2C1%2C256%2C141.33Z%22%2F%3E%3Cpath%20d%3D%22M256%2C255.19a38.91%2C38.91%2C0%2C1%2C0%2C38.9%2C38.91A39%2C39%2C0%2C0%2C0%2C256%2C255.19Zm0%2C53a14.11%2C14.11%2C0%2C1%2C1%2C14.11-14.1A14.12%2C14.12%2C0%2C0%2C1%2C256%2C308.2Z%22%2F%3E%3Cpath%20d%3D%22M284.59%2C216.26a25.06%2C25.06%2C0%2C1%2C0-25.06%2C25.05A25.09%2C25.09%2C0%2C0%2C0%2C284.59%2C216.26Zm-25.06%2C9.08a9.09%2C9.09%2C0%2C1%2C1%2C9.09-9.08A9.09%2C9.09%2C0%2C0%2C1%2C259.53%2C225.34Z%22%2F%3E%3Cpath%20d%3D%22M466.17%2C263.5a23.53%2C23.53%2C0%2C1%2C0%2C0-15H431.66a176.1%2C176.1%2C0%2C0%2C0-1.89-19.42l16.38-3.26a7.5%2C7.5%2C0%2C1%2C0-2.92-14.71l-16.38%2C3.26a177.89%2C177.89%2C0%2C0%2C0-5.66-18.67l31.86-13.2a23.59%2C23.59%2C0%2C1%2C0-5.74-13.86l-31.85%2C13.19a177.46%2C177.46%2C0%2C0%2C0-9.2-17.21l13.87-9.27a7.5%2C7.5%2C0%2C1%2C0-8.33-12.47l-13.89%2C9.28a172.73%2C172.73%2C0%2C0%2C0-12.38-15.08l24.38-24.38a23.57%2C23.57%2C0%2C1%2C0-10.59-10.63l-24.39%2C24.39a177.33%2C177.33%2C0%2C0%2C0-15.1-12.36l9.29-13.9a7.5%2C7.5%2C0%2C0%2C0-12.47-8.33s-5.36%2C8-9.29%2C13.84q-3.44-2.1-7-4l-.28-.16-1-.55-.27-.13h0c-.94-.51-1.88-1-2.83-1.51l-.27-.13v0c-1.83-.95-3.69-1.85-5.56-2.74L343.36%2C64.7c.52%2C0%2C1.05.06%2C1.57.06a23.53%2C23.53%2C0%2C1%2C0-9-45.27A23.51%2C23.51%2C0%2C0%2C0%2C329.5%2C59L316.31%2C90.79a175.88%2C175.88%2C0%2C0%2C0-18.67-5.67l3.25-16.35a7.5%2C7.5%2C0%2C1%2C0-14.71-2.92l-3.26%2C16.36a176.56%2C176.56%2C0%2C0%2C0-19.42-1.88V45.83a23.53%2C23.53%2C0%2C1%2C0-15%2C0v34.5a177.35%2C177.35%2C0%2C0%2C0-19.42%2C1.89l-3.26-16.37a7.5%2C7.5%2C0%2C1%2C0-14.71%2C2.92l3.26%2C16.38a172.13%2C172.13%2C0%2C0%2C0-18.67%2C5.67L182.5%2C59a23.51%2C23.51%2C0%2C1%2C0-15.43%2C5.81c.52%2C0%2C1.05%2C0%2C1.57-.06l13.21%2C31.88a175.83%2C175.83%2C0%2C0%2C0-17.19%2C9.22l-9.31-13.93a7.5%2C7.5%2C0%2C0%2C0-12.47%2C8.33l9.32%2C14a178.41%2C178.41%2C0%2C0%2C0-15.06%2C12.38l-24.46-24.46a23.45%2C23.45%2C0%2C1%2C0-10.59%2C10.62l24.45%2C24.44a177%2C177%2C0%2C0%2C0-12.38%2C15.07l-14-9.33a7.5%2C7.5%2C0%2C1%2C0-8.33%2C12.47l13.93%2C9.31a178.16%2C178.16%2C0%2C0%2C0-9.22%2C17.19L64.69%2C168.64A23.56%2C23.56%2C0%2C1%2C0%2C59%2C182.5l31.87%2C13.2a172.81%2C172.81%2C0%2C0%2C0-5.67%2C18.67l-16.38-3.26a7.5%2C7.5%2C0%2C1%2C0-2.92%2C14.72l16.37%2C3.25a177.35%2C177.35%2C0%2C0%2C0-1.89%2C19.42H45.83a23.53%2C23.53%2C0%2C1%2C0%2C0%2C15h34.5a177.35%2C177.35%2C0%2C0%2C0%2C1.89%2C19.42l-16.37%2C3.26A7.5%2C7.5%2C0%2C0%2C0%2C67.3%2C301a7.32%2C7.32%2C0%2C0%2C0%2C1.47-.14l16.38-3.26a172.81%2C172.81%2C0%2C0%2C0%2C5.67%2C18.67L59%2C329.5a23.52%2C23.52%2C0%2C1%2C0-26.73%2C37.2%2C23.5%2C23.5%2C0%2C0%2C0%2C32.47-23.34l31.89-13.21a174.84%2C174.84%2C0%2C0%2C0%2C9.22%2C17.19l-13.93%2C9.31a7.5%2C7.5%2C0%2C1%2C0%2C8.33%2C12.47l14-9.33a178.78%2C178.78%2C0%2C0%2C0%2C12.37%2C15.07L102.09%2C399.3a23.57%2C23.57%2C0%2C1%2C0%2C10.59%2C10.62l24.46-24.46a178.41%2C178.41%2C0%2C0%2C0%2C15.06%2C12.38l-9.32%2C14a7.5%2C7.5%2C0%2C1%2C0%2C12.47%2C8.33l9.31-13.93a175.91%2C175.91%2C0%2C0%2C0%2C17.19%2C9.21L168.64%2C447.3a23.59%2C23.59%2C0%2C1%2C0%2C13.86%2C5.75l13.2-31.87a172.81%2C172.81%2C0%2C0%2C0%2C18.67%2C5.67l-3.26%2C16.38a7.5%2C7.5%2C0%2C0%2C0%2C5.89%2C8.82%2C8.3%2C8.3%2C0%2C0%2C0%2C1.47.14%2C7.5%2C7.5%2C0%2C0%2C0%2C7.35-6l3.26-16.37a177.35%2C177.35%2C0%2C0%2C0%2C19.42%2C1.89v34.5a23.53%2C23.53%2C0%2C1%2C0%2C15%2C0v-34.5a177.35%2C177.35%2C0%2C0%2C0%2C19.42-1.89l3.26%2C16.37a7.5%2C7.5%2C0%2C1%2C0%2C14.71-2.92l-3.26-16.38a172.13%2C172.13%2C0%2C0%2C0%2C18.67-5.67l13.2%2C31.87a23.52%2C23.52%2C0%2C1%2C0%2C13.86-5.75l-13.21-31.89a175.91%2C175.91%2C0%2C0%2C0%2C17.19-9.21l9.31%2C13.93a7.5%2C7.5%2C0%2C1%2C0%2C12.47-8.33l-9.32-14a178.41%2C178.41%2C0%2C0%2C0%2C15.06-12.38l24.46%2C24.46a23.45%2C23.45%2C0%2C1%2C0%2C10.59-10.62l-24.45-24.44a177%2C177%2C0%2C0%2C0%2C12.38-15.07l14%2C9.33a7.5%2C7.5%2C0%2C1%2C0%2C8.34-12.47l-13.93-9.31a175.91%2C175.91%2C0%2C0%2C0%2C9.21-17.19l31.89%2C13.21A23.53%2C23.53%2C0%2C0%2C0%2C492.51%2C354%2C23.53%2C23.53%2C0%2C0%2C0%2C453%2C329.5l-31.86-13.2a172.77%2C172.77%2C0%2C0%2C0%2C5.66-18.67l16.38%2C3.26a7.5%2C7.5%2C0%2C1%2C0%2C2.93-14.71l-16.37-3.26a177.35%2C177.35%2C0%2C0%2C0%2C1.89-19.42Zm22.3-16h0a8.53%2C8.53%2C0%2C1%2C1-8.53%2C8.53A8.54%2C8.54%2C0%2C0%2C1%2C488.47%2C247.47Zm-25.58-83.7a8.53%2C8.53%2C0%2C1%2C1%2C0%2C6.53A8.46%2C8.46%2C0%2C0%2C1%2C462.89%2C163.77ZM414.35%2C85.59a8.53%2C8.53%2C0%2C1%2C1%2C0%2C12.06A8.47%2C8.47%2C0%2C0%2C1%2C414.35%2C85.59ZM337.08%2C38A8.54%2C8.54%2C0%2C0%2C1%2C345%2C32.69a8.67%2C8.67%2C0%2C0%2C1%2C3.27.65%2C8.53%2C8.53%2C0%2C0%2C1-6.53%2C15.77h0A8.54%2C8.54%2C0%2C0%2C1%2C337.08%2C38ZM174.92%2C44.49a8.44%2C8.44%2C0%2C0%2C1-4.62%2C4.62h0a8.53%2C8.53%2C0%2C0%2C1-6.53-15.77%2C8.53%2C8.53%2C0%2C0%2C1%2C6.53%2C0%2C8.53%2C8.53%2C0%2C0%2C1%2C4.62%2C11.15ZM97.65%2C97.65a8.53%2C8.53%2C0%2C1%2C1%2C0-12.06A8.47%2C8.47%2C0%2C0%2C1%2C97.65%2C97.65ZM49.11%2C170.3a8.52%2C8.52%2C0%2C1%2C1%2C0-6.53A8.44%2C8.44%2C0%2C0%2C1%2C49.11%2C170.3ZM23.53%2C264.53A8.53%2C8.53%2C0%2C1%2C1%2C32.06%2C256%2C8.54%2C8.54%2C0%2C0%2C1%2C23.53%2C264.53Zm25.58%2C83.7a8.53%2C8.53%2C0%2C1%2C1%2C0-6.53A8.51%2C8.51%2C0%2C0%2C1%2C49.11%2C348.23Zm48.54%2C78.18a8.53%2C8.53%2C0%2C1%2C1%2C0-12.06A8.53%2C8.53%2C0%2C0%2C1%2C97.65%2C426.41ZM174.92%2C474a8.53%2C8.53%2C0%2C1%2C1-4.62-11.15h0A8.54%2C8.54%2C0%2C0%2C1%2C174.92%2C474Zm162.16-6.53a8.46%2C8.46%2C0%2C0%2C1%2C4.61-4.62h0a8.45%2C8.45%2C0%2C0%2C1%2C3.25-.65%2C8.54%2C8.54%2C0%2C1%2C1-7.87%2C5.27Zm77.27-53.16a8.52%2C8.52%2C0%2C0%2C1%2C12.06%2C0h0a8.53%2C8.53%2C0%2C1%2C1-12.06%2C0Zm48.54-72.65a8.52%2C8.52%2C0%2C1%2C1%2C0%2C6.53A8.44%2C8.44%2C0%2C0%2C1%2C462.89%2C341.7ZM247.47%2C23.53A8.53%2C8.53%2C0%2C1%2C1%2C256%2C32.06%2C8.54%2C8.54%2C0%2C0%2C1%2C247.47%2C23.53Zm17.06%2C464.94a8.53%2C8.53%2C0%2C1%2C1-8.53-8.53A8.54%2C8.54%2C0%2C0%2C1%2C264.53%2C488.47ZM256%2C416.84c-88.69%2C0-160.84-72.15-160.84-160.84S167.31%2C95.16%2C256%2C95.16a160%2C160%2C0%2C0%2C1%2C61.56%2C12.2%2C7.66%2C7.66%2C0%2C0%2C0%2C1.09.35q2.73%2C1.19%2C5.42%2C2.44c1.16.55%2C2.3%2C1.12%2C3.44%2C1.69l1.33.67c.83.42%2C1.64.86%2C2.46%2C1.3l2.25%2C1.21q3.92%2C2.17%2C7.69%2C4.55c1.13.71%2C2.26%2C1.43%2C3.38%2C2.18h0l.66.44%2C0%2C0A160.7%2C160.7%2C0%2C0%2C1%2C416.84%2C256C416.84%2C344.68%2C344.69%2C416.84%2C256%2C416.84Z%22%2F%3E%3Ccircle%20cx%3D%22202.14%22%20cy%3D%22248.78%22%20r%3D%2212.48%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E') !important;
+	&.item {
+		margin: .5rem !important;
+	}
+}
+
+.tabbed {
+	position: relative;
+	height: 100%;
+}
+
+.fullheight {
+	height: 81.1vh !important;
+	position: relative;
+	top: 0;
+	clear: both;
+}
+
+.halfheight {
+	height: 55vh !important;
+}
+
+.quickview {
+	height: 28.3vh;
+	background-color: #f1f8ff;
+	width: 800px;
+}
+
+.currentAmount {
+	background-color: #f1fff7 !important;
+}
+
+.tabbed .bottom.attached.menu {
+	width: 100% !important;
+	overflow: hidden;
+	margin-top: auto;
+	bottom: 0;
+}
+
+.dashboard {
+	.twelve {
+		border-bottom: 1px solid #ddd !important;
+	}
+}
+
+.summary-side {
+	background-color: #f5f5f5;
+	padding-bottom: 2rem !important;
+	.stats {
+		border-bottom: 0 none;
+	}
+}
+
+.header {
+	margin-bottom: 1.5rem !important;
+}
+
+.stats {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 1.5rem !important;
+	margin-bottom: 1.5rem !important;
+	.column {
+		padding-top: .5rem !important;
+		padding-bottom: .5rem !important;
+	}
+	.stat {
+		box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+		border-radius: .28571429rem;
+		border: 1px solid rgba(34,36,38,.15);
+		display: flex;
+		flex-direction: row;
+		background-color: #fff;
+		.circular {
+			border: 1px solid #fff !important;
+			border-radius: 50% !important;
+			height: 2rem;
+			width: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.statistic .value {
+			font-size: 1.8rem !important;
+		}
+	}
+	.variation {
+		padding: .5rem .5rem .5rem 1rem;
+		width: 4rem;
+		align-items: center;
+		display: flex;
+	}
+	.data {
+		padding: .5rem 1rem .5rem .5rem;
+		flex: 1;
+		text-align: right;
+	}
+	.mini-header {
+		font-size: .8rem;
+		color: #777 !important;
+		text-transform: uppercase;
+		display: block;
+	}
+	.statistic {
+		margin: 0rem;
+	}
+	&:last-child {
+		border-bottom: 0 none;
+	}
+}
+
+.bg-red {
+	background-color: #db2828 !important;
+	.mini-header {
+		color: #ddd !important;
+	}
+	.value {
+		color: #fff !important;
+	}
+}
+
+.bg-green {
+	background-color: #21ba45 !important;
+	.mini-header {
+		color: #eee !important;
+	}
+	.value {
+		color: #fff !important;
+	}
+}
+
+.bg-black {
+	background-color: #000 !important;
+	.mini-header {
+		color: #eee !important;
+	}
+	.value {
+		color: #fff !important;
+	}
+}
+
+.bg-grey {
+	background-color: #888 !important;
+	.mini-header {
+		color: #eee !important;
+	}
+	.value {
+		color: #fff !important;
+	}
+}
+
+.label .icon {
+	margin-right: 0 !important;
+}
+
+.mt6 {
+	margin-top: 6rem;
+}
+
+.mt2 {
+	margin-top: 2rem !important;
+}
+
+.ml1 {
+	margin-right: 1rem !important;
+}
+
+.mr1 {
+	margin-right: 1rem !important;
+}
+
+.ml2 {
+	margin-left: 2rem !important;
+}
+
+.ml3 {
+	margin-left: 3rem !important;
+}
+
+.mr2 {
+	margin-right: 2rem !important;
+}
+
+.mb2 {
+	margin-bottom: 2rem !important;
+}
+
+.pt05 {
+	padding-top: .5rem
+}
+
+.pb05 {
+	padding-bottom: .5rem;
+}
+
+.pt1 {
+	padding-top: 1rem !important;
+}
+
+.pb1 {
+	padding-bottom: 1rem !important;
+}
+
+.pt2 {
+	padding-top: 2rem !important;
+}
+
+.pb2 {
+	padding-bottom: 2rem !important;
+}
