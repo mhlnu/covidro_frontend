@@ -1,7 +1,7 @@
 # covidro.info
 A basic React experiment using public APIs or whatever CORS-free APIs I could find.
 
-## Purpuse
+## Purpose
 
 The whole purpose of this little toy was to create a self-updating, better visual framework for COVID-related dashboards. Work is still in progress.
 
@@ -19,6 +19,6 @@ This project could probably be reused by whoever given that they have access to 
 
 Don't expect a final result too soon. I might as well drop this project anytime if I get bored. Also, do not expect it to run forever, as it is at the mercy of the APIs owners. If they pull the plug, oh well.
  
-The app is currently lurking on [datelazi.ro](https://datelazi.ro), which offers a public API ([datelazi.ro/latestData.json](https://datelazi.ro/latestData.json)) and [graphs.ro](https://www.graphs.ro). My thanks to Dragoș Vană for supporting my lurking and to Alex Ștefănescu (Code4Romania) for making the API public.
+The app is currently lurking on [datelazi.ro](https://datelazi.ro), which offers a public API ([datelazi.ro/latestData.json](https://datelazi.ro/latestData.json)) and [graphs.ro](https://www.graphs.ro). My thanks to Dragoș Vana for supporting my lurking and to Alex Ștefănescu (Code4Romania) for making the API public.
 
 [Running here.](https://covidro.info)
